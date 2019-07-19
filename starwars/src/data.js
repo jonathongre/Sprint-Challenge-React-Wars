@@ -10,7 +10,7 @@ export default class Data extends Component {
     };
   }
   componentDidMount() {
-    axios.get(`https://swapi.co/api/people/`).then(response => {
+    axios.get(`https://henry-mock-swapi.herokuapp.com/api`).then(response => {
       this.setState({
         data: response.data
       });
